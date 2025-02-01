@@ -1,0 +1,7 @@
+.splash-container {
+	max-height: 56vh;
+	height: 56vh;
+	width: 100%;
+	background-image: url("./netvox-splash.png");
+	background-size: cover;
+}

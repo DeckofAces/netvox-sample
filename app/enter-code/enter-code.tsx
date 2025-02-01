@@ -1,7 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { useState, useEffect } from "react";
 import OtpInput from "./components/otp-input";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 export function EnterCode() {
 	let navigate = useNavigate();
@@ -31,7 +31,9 @@ export function EnterCode() {
 	return (
 		<main className="px-3 py-6 h-screen">
 			<button className="rounded-full grid place-items-center size-8 bg-[#CACACA38] mb-2">
-				<ArrowLeft size={18} />
+				<Link to="/forgot-password">
+					<ArrowLeft size={18} />
+				</Link>
 			</button>
 			<section className="h-5/6">
 				<header className="text-neutral-black mb-8">

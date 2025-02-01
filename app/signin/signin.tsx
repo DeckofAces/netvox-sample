@@ -2,13 +2,16 @@ import { ArrowLeft } from "lucide-react";
 import logo from "/logo.png";
 import SigninForm from "./components/signin-form";
 import ContinueWithOtherAccounts from "./components/continue-with-other-accounts";
+import { Link } from "react-router";
 
 export function Signin() {
 	return (
 		<>
 			<main className="px-3 py-6">
 				<button className="rounded-full grid place-items-center size-8 bg-[#CACACA38] mb-2">
-					<ArrowLeft size={18} />
+					<Link to="/">
+						<ArrowLeft size={18} />
+					</Link>
 				</button>
 				<div className="mx-auto text-center space-y-1 mb-4">
 					<img src={logo} alt="logo" className="size-20 mx-auto" />

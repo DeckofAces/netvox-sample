@@ -1,6 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import { Link } from "react-router";
 
 export function ResetPassword() {
 	const [formData, setFormData] = useState({ password: "", confirmPassword: "" });
@@ -28,7 +29,9 @@ export function ResetPassword() {
 	return (
 		<main className="px-3 py-6 h-screen">
 			<button className="rounded-full grid place-items-center size-8 bg-[#CACACA38] mb-2">
-				<ArrowLeft size={18} />
+				<Link to="/forgot-password/enter-otp">
+					<ArrowLeft size={18} />
+				</Link>
 			</button>
 			<section className="h-5/6">
 				<header className="text-neutral-black mb-8">
